@@ -14,9 +14,8 @@ class Solution(object):
                 l = l - 1
             return l
         if k == 0:
-            for i in range(len(code)):
-                code[i] = 0
-            return code
+            result = [0]*len(code)
+            return result
         result = []
         if k > 0:
             for i in range(len(code)):
