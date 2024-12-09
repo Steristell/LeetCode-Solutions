@@ -1,9 +1,9 @@
 class Solution(object):
     def isArraySpecial(self, nums, queries):
-        n = len(nums)
+        #n = len(nums)
         store, ans = [], []
 
-        for i in range(1, n):
+        for i in range(1, len(nums)):
             if (nums[i] % 2) == (nums[i - 1] % 2):
                 store.append(i)
 
